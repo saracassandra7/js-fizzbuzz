@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: lightblue;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 520px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: aqua;
+
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: cadetblue;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: azure;
+}

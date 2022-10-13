@@ -3,11 +3,17 @@
 2) per i multipli sia di 3 che di 5 scrivo FizzBuzz ---> fatto
 3) per i multipli di 5 scrivo Buzz ---> fatto
 4) per i multipli di 3 scrivo Fizz ---> fatto
+
+5) creo container in DOM in cui metto i box con i numeri ---> fatto
+6) metto colori differenti ai box in base a quello che c'è scritto
 */ 
 
 const fizz = 3;
 const buzz = 5;
 const fizzBuzz = 15;
+
+const container =document.querySelector('.container');
+const limit = 100;
 
 for(let i = 1; i <= 100; i++){
 
@@ -24,4 +30,18 @@ for(let i = 1; i <= 100; i++){
     console.log(i);
   }
 
+}
+
+for(let i = 1; i<=limit; i++){
+  //creo il box
+  const box = document.createElement('div');
+
+  //gli aggiungo la classe .box
+  box.className = "box";
+
+  //scrivo nel box il numero
+  box.innerHTML = i;
+
+  //aggiungo il box al container
+  container.append(box);
 }
